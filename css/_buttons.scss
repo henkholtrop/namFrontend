@@ -1,0 +1,108 @@
+$listmenu-icons:(button-upload,button-edit,button-delete);
+@each $icons in $listmenu-icons {
+  .#{$icons} { background: url('../img/#{$icons}.png')no-repeat;}
+}
+
+.blue-button-round, .grey-button-round, .red-button-round {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  float: left;
+  margin-left: 20px;
+  color: $nam-white;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+.blue-button-round {
+  background-color: $nam-blue;
+}
+
+.grey-button-round {
+  background-color: $nam-grey;
+}
+
+.red-button-round {
+  background-color: $nam-red;
+}
+
+.blue-button-square, .green-button-square, .red-button-square {
+  height: 33px;
+  width: 74px;
+  line-height: 33px;
+  border-radius: 4px;
+  color: $nam-white;
+  text-align: center;
+  border-radius: 4px;
+  -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.30);
+  box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.30);
+}
+
+.blue-button-square {
+  background: $nam-blue
+}
+
+.green-button-square {
+  background: $nam-green
+}
+
+.red-button-square {
+  background: $nam-red
+}
+
+.inputfield {
+  height: 33px;
+  width: 210px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: $nam-lightgrey;
+}
+
+.file-inputfield::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file-inputfield::before {
+  content: 'Select your files...';
+  display: block;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  height: 100px;
+  width: 210px;
+  border-radius: 4px;
+  border: 1px dashed;
+  border-color: $nam-blue;
+  text-align: center;
+  line-height: 90px;
+  color: $nam-blue;
+}
+
+.file-inputfield {
+  content: '';
+}
+
+.case-type-button {
+  float: left;
+  width: 25%;
+    label {
+      text-align: center;
+      display: block;
+      margin: 3px 0;
+    }
+}
+
+.case-status-button {
+  float: left;
+  width: 30%;
+    label {
+      text-align: center;
+      display: block;
+      margin: 3px 0;
+    }
+}

@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+$font-stack: Lato, sans-serif;
+$nam-textgrey: #D4D4D4;
+
+html {
+  letter-spacing: 0.25px;
+  font-family: $font-stack sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;  
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+h3 {
+  font-size: 1em;
+}
+h4 {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: $nam-textgrey;
+}
