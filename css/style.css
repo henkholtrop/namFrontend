@@ -23,8 +23,8 @@ h4 {
   font-weight: 400;
   color: #d4d4d4; }
 
-.button-upload {
-  background: url("../img/button-upload.png") no-repeat; }
+.button-add {
+  background: url("../img/button-add.png") no-repeat; }
 
 .button-edit {
   background: url("../img/button-edit.png") no-repeat; }
@@ -38,13 +38,24 @@ h4 {
   border-radius: 16px;
   float: left;
   margin-left: 20px;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .right {
   float: right; }
 
 .left {
   float: left; }
+
+.center {
+  margin: auto; }
+
+.close-add {
+  content: url("../img/close.png");
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  cursor: pointer; }
 
 .blue-button-round {
   background-color: #005399; }
@@ -58,11 +69,15 @@ h4 {
 .blue-button-square, .green-button-square, .red-button-square {
   height: 33px;
   width: 74px;
-  line-height: 33px;
+  margin: 10px 0px;
+  line-height: 32px;
   border-radius: 4px;
   color: white;
   text-align: center;
+  border: 0 none;
+  font-size: 0.875em;
   border-radius: 4px;
+  cursor: pointer;
   -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3); }
 
@@ -84,7 +99,7 @@ h4 {
   border-color: #ecf0f1; }
 
 .file-inputfield::-webkit-file-upload-button {
-  visibility: hidden; }
+  display: none; }
 
 .file-inputfield::before {
   content: 'Select your files...';
@@ -101,37 +116,41 @@ h4 {
   line-height: 90px;
   color: #005399; }
 
-.file-inputfield {
-  content: ''; }
-
 .case-type-button {
   float: left;
   width: 25%; }
-  .case-type-button label {
-    text-align: center;
-    display: block;
-    margin: 3px 0; }
 
 .case-status-button {
   float: left;
-  width: 30%; }
-  .case-status-button label {
-    text-align: center;
-    display: block;
-    margin: 3px 0; }
+  width: 50%; }
 
-.shadow {
+.case-status-button label, .case-type-button label {
+  text-align: center;
+  display: block;
+  margin: 3px 0; }
+.case-status-button input[type=radio], .case-type-button input[type=radio] {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  content: url("../img/radio-button.png"); }
+  .case-status-button input[type=radio]:checked, .case-type-button input[type=radio]:checked {
+    content: url("../img/radio-button-selected.png"); }
+
+.add-shadow {
   height: 100%;
   width: 100%;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; }
+
+p {
+  margin: 0; }
 
 .box-wrapper {
-  width: 870px;
-  height: 320px;
+  width: 580px;
+  height: 370px;
   background-color: white;
   margin: auto;
   border-radius: 8px; }
@@ -165,26 +184,18 @@ h4 {
       .box-wrapper nav li:nth-child(2) {
         background: white;
         color: #6e6e6e; }
-        .box-wrapper nav li:nth-child(2):after {
-          border: solid transparent;
-          content: " ";
-          position: absolute;
-          pointer-events: none;
-          border-left-color: white;
-          border-width: 25px;
-          margin: 0 0 0 120px; }
   .box-wrapper .step-1, .box-wrapper .step-2, .box-wrapper .step-3 {
     width: 210px;
-    height: 230px;
+    height: 240px;
     float: left;
     text-align: center;
-    margin: 0 40px 40px; }
+    margin: 25px 40px; }
     .box-wrapper .step-1 .step-title, .box-wrapper .step-2 .step-title, .box-wrapper .step-3 .step-title {
       font-style: italic;
       font-weight: 300;
       font-size: 0.875em;
       color: #555555;
-      margin: 20px 0; }
+      margin: 0 0 15px; }
 
 html {
   height: 100%; }

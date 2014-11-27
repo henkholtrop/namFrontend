@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<section class="shadow">
+<section class="upload-shadow">
   <div class="box-wrapper">
     <nav>
       <ul>
@@ -16,9 +16,6 @@
         </li>
         <li>
           STEP 2
-        </li>
-        <li>
-          STEP 3
         </li>
       </ul>
     </nav>
@@ -30,10 +27,8 @@
         <p>
           <input class="inputfield" type="text" name="case-name" value="" placeholder="Case name">
         </p>
-    </div>
 
-    <div class="step-2">
-      <div class="step-title">
+              <div class="step-title">
         What type is the Case?
       </div>
         <div class="case-type-button">
@@ -52,33 +47,30 @@
           <input id="info" type="radio" name="case-type" value="info">
           <label for="info">info</label>
         </div>
+        
         <div class="clear"></div>
 
       <div class="step-title">
         What status is the Case?
       </div>
-        <div class="case-status-button">
-          <input id="open" type="radio" name="case-status" value="RFA">
-          <label for="open">open</label>
-        </div>
-        <div class="case-status-button">
-          <input id="in-progress" type="radio" name="case-status" value="NFI">
-          <label for="in-progress">in progress</label>
-        </div>
-        <div class="case-status-button">
-          <input id="closed" type="radio" name="case-status" value="RFC">
-          <label for="closed">closed</label>
-        </div>
+      <div class="case-status-button">
+        <input id="open" type="radio" name="case-status" value="RFA">
+        <label for="open">open</label>
+      </div>
+      <div class="case-status-button">
+        <input id="in-progress" type="radio" name="case-status" value="NFI">
+        <label for="in-progress">in progress</label>
+      </div>
     </div>
 
-    <div class="step-3">
+    <div class="step-2">
       <div class="step-title">
         Which file(s) do you wish to upload?
       </div>
-      <input class="file-inputfield" type="file" name="case-file" value="">
-      <input type="submit" class="green-button-square right">
+        <input class="file-inputfield" type="file" name="case-file" value="">
+        <input type="submit" class="green-button-square right" value="UPLOAD">
+      </div>
     </div>
-  </div>
   </form>
 </section>
 
