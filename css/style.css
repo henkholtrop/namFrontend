@@ -92,7 +92,7 @@ h4 {
 
 .blue-large-button-square, .green-large-button-square, .red-large-button-square {
   height: 33px;
-  width: 205px;
+  width: 100%;
   margin: 10px 0px;
   line-height: 32px;
   border-radius: 4px;
@@ -116,7 +116,7 @@ h4 {
 
 .inputfield {
   height: 33px;
-  width: 210px;
+  width: 203px;
   margin-bottom: 0px;
   border-radius: 4px;
   border: 1px solid;
@@ -212,8 +212,8 @@ h4 {
 
 .login-wrap {
   width: 210px;
-  height: 255px;
-  padding: 25px 40px;
+  height: auto;
+  padding: 25px 40px 10px;
   background-color: white;
   border-radius: 4px; }
   .login-wrap div {
