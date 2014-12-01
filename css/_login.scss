@@ -19,3 +19,20 @@
     margin: 0 77px 20px;
   }
 }
+
+.error-message-username, .error-message-password {
+  width: 195px;
+  position: absolute;
+  color: $nam-white;
+  font-style: italic;
+  top: 117px;
+  right: -210px;
+}
+
+.error-message-username {
+  top: 117px;
+}
+
+.error-message-password {
+  top: 170px;
+}
