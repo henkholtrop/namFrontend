@@ -1,0 +1,21 @@
+.login-background {
+  background: $nam-green;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.login-wrap {
+  width: 210px;
+  height: 255px;
+  padding: 25px 40px;
+  background-color: $nam-white;
+  border-radius: 4px;
+  div {
+    margin: auto;
+  }
+  img {
+    content: url('../img/nam-logo-grey.png');
+    margin: 0 77px 20px;
+  }
+}

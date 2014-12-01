@@ -72,10 +72,38 @@ $listmenu-icons:(button-add,button-edit,button-delete);
   background: $nam-red
 }
 
+.blue-large-button-square, .green-large-button-square, .red-large-button-square {
+  height: 33px;
+  width: 205px;
+  margin: 10px 0px;
+  line-height: 32px;
+  border-radius: 4px;
+  color: $nam-white;
+  text-align: center;
+  border: 0 none;
+  font-size: 0.875em;
+  border-radius: 4px;
+  cursor: pointer;
+  -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.30);
+  box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.30);
+}
+
+.blue-large-button-square {
+  background: $nam-blue
+}
+
+.green-large-button-square {
+  background: $nam-green
+}
+
+.red-large-button-square {
+  background: $nam-red
+}
+
 .inputfield {
   height: 33px;
   width: 210px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border-radius: 4px;
   border: 1px solid;
   border-color: $nam-lightgrey;
@@ -118,8 +146,9 @@ $listmenu-icons:(button-add,button-edit,button-delete);
     margin: 3px 0;
   }
   input[type=radio] {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
+    visibility: none;
     cursor: pointer;
     content: url('../img/radio-button.png');
     &:checked {

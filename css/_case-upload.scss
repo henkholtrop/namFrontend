@@ -8,65 +8,41 @@
   display: none;
 }
 
-p {
-  margin: 0;
+.option {
+  margin: 0 0 15px 0;
 }
 
 .box-wrapper {
-  width: 580px;
-  height: 370px;
+  width: 290px;
+  height: 420px;
   background-color: $nam-white;
   margin: auto;
   border-radius: 8px;
-  nav {
-    float: left;
-    width: 100%;
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      float: left;
-      width: 290px;
-      text-align: center;
-      line-height: 50px;
-      height: 50px;
-      color: $nam-white;
-      background-color: $nam-grey;
-      &:first-child:after {
-        border: solid transparent;
-        content: " ";
-        position: absolute;
-        pointer-events: none;
-        border-left-color: $nam-grey;
-        border-width: 25px;
-        margin: 0 0 0 120px;
-      }
-      &:first-child {
-        border-radius: 8px 0 0 0;
-      }
-      &:last-child {
-        border-radius: 0 8px 0 0;
-      }
-      &:nth-child(2) {
-        background: $nam-white;
-        color: $nam-grey;
-      }
-    }
+}
+.box-step {
+  width: 210px;
+  height: 240px;
+  float: left;
+  text-align: center;
+  margin: 5px 40px;
+  .step-title {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.875em;
+    color: #555555;
+    margin: 15px 0;
+    display: block;
   }
-  .step-1, .step-2, .step-3 {
-    width: 210px;
-    height: 240px;
-    float: left;
-    text-align: center;
-    margin: 25px 40px;
-    .step-title {
-      font-style: italic;
-      font-weight: 300;
-      font-size: 0.875em;
-      color: #555555;
-      margin: 0 0 15px;
-    }
-  }
+}
+
+
+.box-title {
+  width: 100%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  background: $nam-white;
+  color: $nam-grey;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
 }
