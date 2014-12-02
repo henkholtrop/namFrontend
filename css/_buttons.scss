@@ -47,10 +47,10 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 .grey-button-round {
   background-color: $nam-btngrey;
   &:hover {
-    background-color: $nam-lightgrey;
+    background-color: $nam-btnlightgrey;
   }
   &:active {
-    background-color: $nam-grey;
+    background-color: $nam-btndarkgrey;
   }  
 }
 
