@@ -4,6 +4,7 @@
 @import 'case-upload';
 @import 'login';
 @import 'notifications';
+@import 'user';
 
 html {
   height: 100%;
@@ -12,6 +13,11 @@ html {
 body {
   margin: 0 auto;
   height: 100%;
+}
+
+.header-wrapper {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .clear {
@@ -28,13 +34,13 @@ header {
   height: 60px;
   background: $nam-green;
   img {
-    margin: 12px 0 0 5%;
+    margin: 12px 0 0 0;
     content: url('../img/nam-logo.svg')no-repeat;
     float: left;
     width: 128px;
   }
   nav {
-    margin-right: 5%;
+    margin-right: 0;
     ul {
       list-style: none;
       float: right;
