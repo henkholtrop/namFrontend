@@ -4,13 +4,15 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 }
 
 .blue-button-round, .grey-button-round, .red-button-round {
-  height: 32px;
-  width: 32px;
-  border-radius: 16px;
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
   float: left;
   margin-left: 20px;
   color: $nam-white;
   cursor: pointer;
+  -moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.30);
+  box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.30);
 }
 
 .right {
@@ -34,14 +36,32 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 
 .blue-button-round {
   background-color: $nam-blue;
+  &:hover {
+    background-color: $nam-lightblue;
+  }
+  &:active {
+    background-color: $nam-darkblue;
+  }
 }
 
 .grey-button-round {
-  background-color: $nam-grey;
+  background-color: $nam-btngrey;
+  &:hover {
+    background-color: $nam-lightgrey;
+  }
+  &:active {
+    background-color: $nam-grey;
+  }  
 }
 
 .red-button-round {
   background-color: $nam-red;
+  &:hover {
+    background-color: $nam-lightred;
+  }
+  &:active {
+    background-color: $nam-darkred;
+  }  
 }
 
 .blue-button-square, .green-button-square, .red-button-square {

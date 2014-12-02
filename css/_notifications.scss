@@ -6,17 +6,53 @@
   height: 52px;
   width: 75%;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left:0;
   right:0;
   margin-left:auto;
   margin-right:auto;
   text-align: center;
-  width: 85%;
-  line-height: 52px;
+  width: 50%;
+  display: table;
   font-weight: 300;
   font-style: italic;
-  font-size: 0.875em;
+  font-size: 1em;
   color: $nam-grey;
+  z-index: 100;
+  -webkit-transform: translateY(+100px);
+  -webkit-animation: slideUp 4s 0.25s 1 ease forwards;
+  -moz-transform:    translateY(+100px);
+  -moz-animation:    slideUp 4s 0.25s 1 ease forwards;
+}
+
+.red-notification {
+  content: url('../img/red-notification.png');
+  float: right;
+  width: 24px;
+  padding-right: 50px;
+}
+
+.green-notification {
+  content: url('../img/green-notification.png');
+  float: right;
+  width: 24px;
+  padding-right: 50px;
+}
+
+.notification-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes slideUp {
+    0%, 100% { -webkit-transform: translateY(+100px); }
+    80% { -moz-transform: translateY(-10px); }
+    10%, 90% { -webkit-transform: translateY(0px); }
+}
+
+@-moz-keyframes slideUp {
+    0%, 100% { -moz-transform: translateY(+100px); }
+    80% { -moz-transform: translateY(-10px); }
+    10%, 90% { -moz-transform: translateY(0px); }
 }

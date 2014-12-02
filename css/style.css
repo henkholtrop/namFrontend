@@ -33,13 +33,15 @@ h4 {
   background: url("../img/button-delete.png") no-repeat; }
 
 .blue-button-round, .grey-button-round, .red-button-round {
-  height: 32px;
-  width: 32px;
-  border-radius: 16px;
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
   float: left;
   margin-left: 20px;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3); }
 
 .right {
   float: right; }
@@ -59,12 +61,24 @@ h4 {
 
 .blue-button-round {
   background-color: #005399; }
+  .blue-button-round:hover {
+    background-color: #4a90e2; }
+  .blue-button-round:active {
+    background-color: #003c6f; }
 
 .grey-button-round {
-  background-color: #6e6e6e; }
+  background-color: #b2b8c5; }
+  .grey-button-round:hover {
+    background-color: #ecf0f1; }
+  .grey-button-round:active {
+    background-color: #6e6e6e; }
 
 .red-button-round {
   background-color: #fb6d50; }
+  .red-button-round:hover {
+    background-color: #fc927c; }
+  .red-button-round:active {
+    background-color: #ed583a; }
 
 .blue-button-square, .green-button-square, .red-button-square {
   height: 33px;
@@ -244,19 +258,60 @@ h4 {
   height: 52px;
   width: 75%;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 85%;
-  line-height: 52px;
+  width: 50%;
+  display: table;
   font-weight: 300;
   font-style: italic;
-  font-size: 0.875em;
-  color: #6e6e6e; }
+  font-size: 1em;
+  color: #6e6e6e;
+  z-index: 100;
+  -webkit-transform: translateY(100px);
+  -webkit-animation: slideUp 4s 0.25s 1 ease forwards;
+  -moz-transform: translateY(100px);
+  -moz-animation: slideUp 4s 0.25s 1 ease forwards; }
+
+.red-notification {
+  content: url("../img/red-notification.png");
+  float: right;
+  width: 24px;
+  padding-right: 50px; }
+
+.green-notification {
+  content: url("../img/green-notification.png");
+  float: right;
+  width: 24px;
+  padding-right: 50px; }
+
+.notification-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+@-webkit-keyframes slideUp {
+  0%, 100% {
+    -webkit-transform: translateY(100px); }
+
+  80% {
+    -moz-transform: translateY(-10px); }
+
+  10%, 90% {
+    -webkit-transform: translateY(0px); } }
+
+@-moz-keyframes slideUp {
+  0%, 100% {
+    -moz-transform: translateY(100px); }
+
+  80% {
+    -moz-transform: translateY(-10px); }
+
+  10%, 90% {
+    -moz-transform: translateY(0px); } }
 
 html {
   height: 100%; }
