@@ -84,130 +84,182 @@
 
 <section class="delete-case-popup" style="display:none">
   <div class="box-wrapper">
-  <div class="box-title">
-    DELETE CASE
-    <div class="close-add"></div>
-  </div>
-
-    <form action="">
-      <div class="box-step">
-  
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="box-title">
+          DELETE CASE
+          <div class="close-add"></div>
+        </div>  
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
         <div class="step-title">
           Groningen Schadevergoedingen Are you sure to delete this item?
         </div>
-  
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
         <div class="grey-button-square left">CANCEL</div>
         <div class="red-button-square right">DELETE</div>
-  
       </div>
-    </form>
+    </div>
   </div>
 </section>
+
 <section class="add-case-popup" style="display:none">
   <div class="box-wrapper">
-  <div class="box-title">
-    ADD CASE
-  </div>
-  <div class="close-add"></div>
-  <form action="">
-    <div class="box-step">
-      <div class="step-title">
-        What is the name of the Case?
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="box-title">
+          ADD CASE
+        </div>
+        <div class="close-add"></div>
       </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          What is the name of the Case?
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
         <input class="inputfield" type="text" name="case-name" value="" placeholder="Case name">
-  
-      <div class="step-title">
-      What type is the Case?
       </div>
-      <div class="case-type-button">
-        <input id="RFA" type="radio" name="case-type" value="RFA">
-        <label for="RFA">RFA</label>
-      </div>
-      <div class="case-type-button">
-        <input id="NFI" type="radio" name="case-type" value="NFI">
-        <label for="NFI">NFI</label>
-      </div>
-      <div class="case-type-button">
-        <input id="RFC" type="radio" name="case-type" value="RFC">
-        <label for="RFC">RFC</label>
-      </div>
-      <div class="case-type-button">
-        <input id="info" type="radio" name="case-type" value="info">
-        <label for="info">info</label>
-      </div>
-  
-      <div class="clear"></div>
-  
-      <div class="step-title">
-        What status is the Case?
-      </div>
-  
-      <div class="case-status-button">
-        <input id="open" type="radio" name="case-status" value="open">
-        <label for="open">open</label>
-      </div>
-  
-      <div class="case-status-button">
-        <input id="in-progress" type="radio" name="case-status" value="in progress">
-        <label for="in-progress">in progress</label>
-      </div>
-      <input type="submit" value="CREATE" class="green-button-square">
     </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          What type is the Case?
+        </div>
+      </div>
     </div>
-  </form>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="case-type-button">
+          <input id="RFA" type="radio" name="case-type" value="RFA">
+          <label for="RFA">RFA</label>
+        </div>
+        <div class="case-type-button">
+          <input id="NFI" type="radio" name="case-type" value="NFI">
+          <label for="NFI">NFI</label>
+        </div>
+        <div class="case-type-button">
+          <input id="RFC" type="radio" name="case-type" value="RFC">
+          <label for="RFC">RFC</label>
+        </div>
+        <div class="case-type-button">
+          <input id="info" type="radio" name="case-type" value="info">
+          <label for="info">info</label>
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          What status is the Case?
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="case-status-button">
+          <input id="open" type="radio" name="case-status" value="open">
+          <label for="open">open</label>
+        </div>
+    
+        <div class="case-status-button">
+          <input id="in-progress" type="radio" name="case-status" value="in progress">
+          <label for="in-progress">in progress</label>
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <input type="submit" value="CREATE" class="green-button-square center">
+      </div>
+    </div>    
+  </div>
 </section>
+
 <section class="edit-case-popup" style="display:none">
   <div class="box-wrapper">
-    <div class="box-title">
-      EDIT CASE
-    </div>
-    <div class="close-add"></div>
-  <form action="">
-    <div class="box-step">
-      <div class="step-title">
-        Case name
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="box-title">
+          EDIT CASE
+        </div>
+        <div class="close-add"></div>
       </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          Case name
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
         <input class="inputfield" type="text" name="case-name" value="" placeholder="Case name">
-  
-      <div class="step-title">
-        Case type
       </div>
-      <div class="case-type-button">
-        <input id="RFA" type="radio" name="case-type" value="RFA">
-        <label for="RFA">RFA</label>
-      </div>
-      <div class="case-type-button">
-        <input id="NFI" type="radio" name="case-type" value="NFI">
-        <label for="NFI">NFI</label>
-      </div>
-      <div class="case-type-button">
-        <input id="RFC" type="radio" name="case-type" value="RFC">
-        <label for="RFC">RFC</label>
-      </div>
-      <div class="case-type-button">
-        <input id="info" type="radio" name="case-type" value="info">
-        <label for="info">info</label>
-      </div>
-  
-      <div class="clear"></div>
-  
-      <div class="step-title">
-        Case status
-      </div>
-  
-      <div class="case-status-button">
-        <input id="open" type="radio" name="case-status" value="open">
-        <label for="open">open</label>
-      </div>
-  
-      <div class="case-status-button">
-        <input id="in-progress" type="radio" name="case-status" value="in progress">
-        <label for="in-progress">in progress</label>
-      </div>
-      <input type="submit" value="CONFIRM" class="green-button-square">
     </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          Case type
+        </div>
+      </div>
     </div>
-  </form>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="case-type-button">
+          <input id="RFA" type="radio" name="case-type" value="RFA">
+          <label for="RFA">RFA</label>
+        </div>
+        <div class="case-type-button">
+          <input id="NFI" type="radio" name="case-type" value="NFI">
+          <label for="NFI">NFI</label>
+        </div>
+        <div class="case-type-button">
+          <input id="RFC" type="radio" name="case-type" value="RFC">
+          <label for="RFC">RFC</label>
+        </div>
+        <div class="case-type-button">
+          <input id="info" type="radio" name="case-type" value="info">
+          <label for="info">info</label>
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          Case status
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="case-status-button">
+          <input id="open" type="radio" name="case-status" value="open">
+          <label for="open">open</label>
+        </div>
+    
+        <div class="case-status-button">
+          <input id="in-progress" type="radio" name="case-status" value="in progress">
+          <label for="in-progress">in progress</label>
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <input type="submit" value="SUBMIT" class="green-button-square center">
+      </div>
+    </div>    
+  </div>
 </section>
 
 

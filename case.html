@@ -40,9 +40,9 @@
 </div>
 
 <div class="button-wrapper">
-  <div class="button-add blue-button-round button-add-case"></div>
-  <div class="button-edit grey-button-round button-edit-case"></div>
-  <div class="button-delete red-button-round button-delete-case"></div>
+  <div class="button-add blue-button-round button-add-file"></div>
+  <div class="button-edit grey-button-round button-edit-file"></div>
+  <div class="button-delete red-button-round button-delete-file"></div>
 </div>
 
 <div class="clear"></div>
@@ -204,6 +204,97 @@
     </div>
     </div>
   </form>
+</section>
+
+
+<section class="delete-file-popup" style="display:none">
+  <div class="box-wrapper">
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="box-title">
+          DELETE CASE
+          <div class="close-add"></div>
+        </div>
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          Groningen Schadevergoedingen Are you sure to delete this item?
+        </div>
+      </div>
+    </div>
+        
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="grey-button-square left">CANCEL</div>
+        <div class="red-button-square right">DELETE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="add-file-popup" style="display:none">
+  <div class="box-wrapper">
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="box-title">
+          ADD FILE(S)
+        </div>
+        <div class="close-add"></div>
+      </div>
+    </div>
+      
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          Please select the file(s) from the directory
+        </div>
+      </div>
+    </div>
+      
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <input class="file-inputfield" type="file" value="" placeholder="Case name">
+      </div>
+    </div>
+  
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <input type="submit" value="UPLOAD" class="green-button-square center">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edit-file-popup" style="display:none">
+  <div class="box-wrapper">
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="box-title">
+          EDIT FILE
+        </div>
+        <div class="close-add"></div>    
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <div class="step-title">
+          File name
+        </div>  
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <input class="inputfield" type="text" name="file-name" value="" placeholder="Overzicht November 2014.pdf">
+      </div>
+    </div>
+    <div class="box-row-wrapper">
+      <div class="box-cell-wrapper">
+        <input type="submit" value="SUBMIT" class="green-button-square center">
+      </div>
+    </div>    
+  </div>
 </section>
 
 

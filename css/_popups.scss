@@ -1,4 +1,6 @@
-.delete-case-popup, .edit-case-popup, .add-case-popup, .invite-user-popup, .delete-user-popup, .edit-user-popup {
+.delete-case-popup, .edit-case-popup, .add-case-popup, 
+.invite-user-popup, .delete-user-popup, .edit-user-popup, 
+.add-file-popup, .delete-file-popup, .edit-file-popup {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -13,29 +15,33 @@
 }
 
 .box-wrapper {
-  width: 290px;
-  height: 420px;
+  width: 210px;
   background-color: $nam-white;
   margin: auto;
+  display: table;
   border-radius: 8px;
+  overflow: hidden;
+  padding: 0 40px 20px;
 }
-.box-step {
+
+.box-row-wrapper {
+  display: table-row;
+}
+
+.box-cell-wrapper {
+  display: table-cell;
   width: 210px;
-  height: 240px;
-  float: left;
+  margin: 0 auto;
+}
+
+.step-title {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.875em;
+  color: #555555;
+  margin: 15px 0;
+  display: block;
   text-align: center;
-  margin: 5px 40px;
-  .step-title {
-    font-style: italic;
-    font-weight: 300;
-    font-size: 0.875em;
-    color: #555555;
-    margin: 15px 0;
-    display: block;
-  }
-  p {
-    margin-bottom: 20px;
-  }
 }
 
 .box-title {

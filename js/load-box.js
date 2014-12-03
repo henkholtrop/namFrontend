@@ -42,4 +42,26 @@ $(document).ready(function() {
   $(closePopup).click(function() {
     $('.delete-user-popup').css('display','none');
   });
+
+  //upload
+  $('.button-add-file').click(function() {
+    $('.add-file-popup').css('display','block');
+  });
+  $('.button-delete-file').click(function() {
+    $('.delete-file-popup').css('display','block');
+  });
+  $('.button-edit-file').click(function() {
+    $('.edit-file-popup').css('display','block');
+  });
+
+  $(closePopup).click(function() {
+    $('.add-file-popup').css('display','none');
+  });
+  $(closePopup).click(function() {
+    $('.delete-file-popup').css('display','none');
+  });
+  $(closePopup).click(function() {
+    $('.edit-file-popup').css('display','none');
+  });
 });
+
