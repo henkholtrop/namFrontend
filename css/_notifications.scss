@@ -18,7 +18,8 @@
   font-weight: 300;
   font-style: italic;
   font-size: 1em;
-  color: $nam-grey;
+  color: $txt-normal;
+  line-height: 24px;
   z-index: 100;
   -webkit-transform: translateY(+100px);
   -webkit-animation: slideUp 4s 0.25s 1 ease forwards;
@@ -27,17 +28,25 @@
 }
 
 .red-notification {
-  content: url('../img/red-notification.png');
+  content: url('../img/red-notification.svg');
   float: right;
+  height: 24px;
   width: 24px;
-  padding-right: 50px;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: $nam-red;
+  margin-right: 50px;
 }
 
 .green-notification {
-  content: url('../img/green-notification.png');
+  content: url('../img/green-notification.svg');
   float: right;
+  height: 24px;
   width: 24px;
-  padding-right: 50px;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: $nam-green;
+  margin-right: 50px;
 }
 
 .notification-cell {

@@ -7,7 +7,7 @@
 
 .login-wrap {
   width: 210px;
-  height: auto;
+  display: table;
   padding: 25px 40px 10px ;
   background-color: $nam-white;
   border-radius: 4px;
@@ -15,7 +15,7 @@
     margin: auto;
   }
   img {
-    content: url('../img/nam-logo-grey.png');
+    content: url('../img/nam-logo-grey.svg');
     margin: 0 77px 20px;
   }
 }

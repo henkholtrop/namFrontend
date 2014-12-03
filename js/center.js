@@ -12,4 +12,3 @@ jQuery.fn.center = function(parent) {
 return this;
 }
 $("div.box-wrapper").center(false);
-$("div.login-wrap").center(false);

@@ -84,7 +84,7 @@ header {
         width: 65%;
         padding-left: 3%;
         a {
-          color: $nam-grey;
+          color: $txt-normal;
           text-decoration: none;
           &:hover {
             text-decoration: underline;
@@ -93,11 +93,11 @@ header {
       }
       .case-type {
         width: 20%;
-        color: $nam-grey;
+        color: $txt-normal;
       }
       .case-status {
         width: 10%;
-        color: $nam-darkgrey;
+        color: $txt-dark;
         font-weight: 200;
         font-style: italic;
       }
@@ -108,13 +108,14 @@ header {
 .breadcrumb {
   float: left;
   a {
-    color: $nam-darkgrey;
+    color: $txt-light;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
     &:last-child {
       font-weight: 600;
+      color: $txt-dark;
     }
   }
 }
