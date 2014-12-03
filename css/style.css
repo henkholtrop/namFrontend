@@ -177,51 +177,6 @@ h4 {
   .case-status-button input[type=radio]:checked, .case-type-button input[type=radio]:checked {
     content: url("../img/radio-button-selected.png"); }
 
-.delete-case-popup, .edit-case-popup, .add-case-popup, .invite-user-popup, .delete-user-popup, .edit-user-popup {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: none; }
-
-.option {
-  margin: 0 0 15px 0; }
-
-.box-wrapper {
-  width: 290px;
-  height: 420px;
-  background-color: white;
-  margin: auto;
-  border-radius: 8px; }
-
-.box-step {
-  width: 210px;
-  height: 240px;
-  float: left;
-  text-align: center;
-  margin: 5px 40px; }
-  .box-step .step-title {
-    font-style: italic;
-    font-weight: 300;
-    font-size: 0.875em;
-    color: #555555;
-    margin: 15px 0;
-    display: block; }
-  .box-step p {
-    margin-bottom: 20px; }
-
-.box-title {
-  width: 100%;
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  background: white;
-  color: #6e6e6e;
-  text-align: center;
-  border-radius: 8px 8px 0 0; }
-
 .login-background {
   background: #6abf28;
   position: absolute;
@@ -343,6 +298,51 @@ h4 {
   font-style: italic;
   font-weight: 300; }
 
+.delete-case-popup, .edit-case-popup, .add-case-popup, .invite-user-popup, .delete-user-popup, .edit-user-popup {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; }
+
+.option {
+  margin: 0 0 15px 0; }
+
+.box-wrapper {
+  width: 290px;
+  height: 420px;
+  background-color: white;
+  margin: auto;
+  border-radius: 8px; }
+
+.box-step {
+  width: 210px;
+  height: 240px;
+  float: left;
+  text-align: center;
+  margin: 5px 40px; }
+  .box-step .step-title {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.875em;
+    color: #555555;
+    margin: 15px 0;
+    display: block; }
+  .box-step p {
+    margin-bottom: 20px; }
+
+.box-title {
+  width: 100%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  background: white;
+  color: #6e6e6e;
+  text-align: center;
+  border-radius: 8px 8px 0 0; }
+
 html {
   height: 100%; }
 
@@ -404,7 +404,7 @@ header {
         border-bottom-color: #ecf0f1;
         padding: 17px 0; }
       .main ul li .case-name {
-        width: 55%;
+        width: 65%;
         padding-left: 3%; }
         .main ul li .case-name a {
           color: #6e6e6e;
@@ -412,10 +412,10 @@ header {
           .main ul li .case-name a:hover {
             text-decoration: underline; }
       .main ul li .case-type {
-        width: 25%;
+        width: 20%;
         color: #6e6e6e; }
       .main ul li .case-status {
-        width: 15%;
+        width: 10%;
         color: #333333;
         font-weight: 200;
         font-style: italic; }
@@ -440,15 +440,15 @@ header {
   border-bottom: 3px solid;
   border-bottom-color: #ecf0f1; }
   .listheading .case-name-head {
-    width: 54.7%;
+    width: 64.7%;
     padding-left: 3%;
     float: left;
     font-size: 0.8em; }
   .listheading .case-type-head {
-    width: 26.2%;
+    width: 21.2%;
     float: left;
     font-size: 0.8em; }
   .listheading .case-status-head {
-    width: 15%;
+    width: 10%;
     float: left;
     font-size: 0.8em; }

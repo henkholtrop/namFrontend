@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NAM</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-wrapper">
+    <img src="" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
+  
+    <nav>
+      <ul>
+        <a href="index.html">
+          <li>
+            Cases
+          </li>
+        </a>
+        <a href="users.html">
+          <li>
+            Users
+          </li>
+        </a>
+        <a href="login.html">
+          <li>
+            Logout
+          </li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="main">
+
+<div class="breadcrumb">
+  <a href="#">Users overview</a> >
+</div>
+
+<div class="button-wrapper">
+  <div class="button-add button-invite-user blue-button-round"></div>
+  <div class="button-edit button-edit-user grey-button-round"></div>
+  <div class="button-delete button-delete-user red-button-round"></div>
+</div>
+
+<div class="clear"></div>
+
+  <div class="listheading">
+    <div class="case-name-head">Name</div>
+      <div class="case-type-head">E-mail</div>
+      <div class="case-status-head">Status</div>
+  </div>
+  <ul class="doc-list">
+    <li class="case">
+      <div class="case-name"><a href="user.html">Jan Halstra</a></div>
+      <div class="case-type">j.halstra@nam.nl</div>
+      <div class="case-status">active</div>
+    </li>
+    <li class="case">
+      <div class="case-name"><a href="#">Erna Koolbergen</a></div>
+      <div class="case-type">e.koolbergen@nam.nl</div>
+      <div class="case-status">active</div>
+    </li>
+    <li class="case">
+      <div class="case-name"><a href="#">Albert Groothuizen</a></div>
+      <div class="case-type">a.groothuizen@nam.nl</div>
+      <div class="case-status">active</div>
+    </li>
+    <li class="case">
+      <div class="case-name"><a href="#">Jan Verschuur</a></div>
+      <div class="case-type">j.verschuur@nam.nl</div>
+      <div class="case-status">invited</div>
+    </li>
+  </ul>
+
+</section>
+
+
+<section class="invite-user-popup" style="display:none">
+  <div class="box-wrapper">
+  <div class="box-title">
+    INVITE USER
+    <div class="close-add"></div>
+  </div>
+
+    <form action="">
+      <div class="box-step">
+  
+        <p>
+          <input class="inputfield" type="text" name="first-name" value="" placeholder="First name">
+        </p>
+        <p>
+          <input class="inputfield" type="text" name="last-name" value="" placeholder="Last name">
+        </p>
+        <p>
+          <input class="inputfield" type="text" name="e-mail" value="" placeholder="E-mail adress">
+        </p>
+  
+        <div class="step-title">
+          The new user will recieve an e-mail. This e-mail will contain a link to let them create a   password
+        </div>
+  
+        <input type="submit" value="INVITE" class="green-button-square">
+  
+      </div>
+    </form>
+  
+  </div>
+</section>
+<section class="edit-user-popup" style="display:none">
+  <div class="box-wrapper">
+  <div class="box-title">
+    EDIT USER
+    <div class="close-add"></div>
+  </div>
+
+    <form action="">
+      <div class="box-step">
+  
+        <p>
+          <input class="inputfield" type="text" name="first-name" value="" placeholder="Jan">
+        </p>
+        <p>
+          <input class="inputfield" type="text" name="last-name" value="" placeholder="Halstra">
+        </p>
+        <p>
+          <input class="inputfield" type="text" name="e-mail" value="" placeholder="j.halstra@nam.nl">
+        </p>
+  
+        <input type="submit" value="INVITE" class="green-button-square">
+  
+      </div>
+    </form>
+  
+  </div>
+</section>
+<section class="delete-user-popup" style="display:none">
+  <div class="box-wrapper">
+  <div class="box-title">
+    DELETE USER
+    <div class="close-add"></div>
+  </div>
+
+    <form action="">
+      <div class="box-step">
+  
+        <div class="step-title">
+          Jan Halstra Are you sure to delete this item?
+        </div>
+  
+        <div class="grey-button-square left">CANCEL</div>
+        <div class="red-button-square right">DELETE</div>
+  
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<script src="js/list.js" type="text/javascript"></script>
+<script src="js/load-box.js" type="text/javascript"></script>
+<script src="js/center.js" type="text/javascript"></script>
+<script src="js/notification.js" type="text/javascript"></script>
+</body>
+</html>

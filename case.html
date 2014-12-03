@@ -8,38 +8,41 @@
 <body>
 
 <header>
-  <img src="" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
-
-  <nav>
-    <ul>
-      <a href="#">
-        <li>
-          Cases
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          Users
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          Logout
-        </li>
-      </a>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <img src="" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
+  
+    <nav>
+      <ul>
+        <a href="index.html">
+          <li>
+            Cases
+          </li>
+        </a>
+        <a href="users.html">
+          <li>
+            Users
+          </li>
+        </a>
+        <a href="login.html">
+          <li>
+            Logout
+          </li>
+        </a>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <section class="main">
 
 <div class="breadcrumb">
-  <a href="#">Case overview</a> > <a href="#">Groningen Schadevergoedingen</a> >
+  <a href="index.html">Case overview</a> > <a href="#">Groningen Schadevergoedingen</a> >
 </div>
 
 <div class="button-wrapper">
-  <div class="button-upload blue-button-round"></div>
-  <div class="button-delete red-button-round"></div>
+  <div class="button-add blue-button-round button-add-case"></div>
+  <div class="button-edit grey-button-round button-edit-case"></div>
+  <div class="button-delete red-button-round button-delete-case"></div>
 </div>
 
 <div class="clear"></div>
@@ -74,6 +77,139 @@
 
 </section>
 
+
+<section class="delete-case-popup" style="display:none">
+  <div class="box-wrapper">
+  <div class="box-title">
+    DELETE CASE
+    <div class="close-add"></div>
+  </div>
+
+    <form action="">
+      <div class="box-step">
+  
+        <div class="step-title">
+          Groningen Schadevergoedingen Are you sure to delete this item?
+        </div>
+  
+        <div class="grey-button-square left">CANCEL</div>
+        <div class="red-button-square right">DELETE</div>
+  
+      </div>
+    </form>
+  </div>
+</section>
+<section class="add-case-popup" style="display:none">
+  <div class="box-wrapper">
+  <div class="box-title">
+    ADD CASE
+  </div>
+  <div class="close-add"></div>
+  <form action="">
+    <div class="box-step">
+      <div class="step-title">
+        What is the name of the Case?
+      </div>
+        <input class="inputfield" type="text" name="case-name" value="" placeholder="Case name">
+  
+      <div class="step-title">
+      What type is the Case?
+      </div>
+      <div class="case-type-button">
+        <input id="RFA" type="radio" name="case-type" value="RFA">
+        <label for="RFA">RFA</label>
+      </div>
+      <div class="case-type-button">
+        <input id="NFI" type="radio" name="case-type" value="NFI">
+        <label for="NFI">NFI</label>
+      </div>
+      <div class="case-type-button">
+        <input id="RFC" type="radio" name="case-type" value="RFC">
+        <label for="RFC">RFC</label>
+      </div>
+      <div class="case-type-button">
+        <input id="info" type="radio" name="case-type" value="info">
+        <label for="info">info</label>
+      </div>
+  
+      <div class="clear"></div>
+  
+      <div class="step-title">
+        What status is the Case?
+      </div>
+  
+      <div class="case-status-button">
+        <input id="open" type="radio" name="case-status" value="open">
+        <label for="open">open</label>
+      </div>
+  
+      <div class="case-status-button">
+        <input id="in-progress" type="radio" name="case-status" value="in progress">
+        <label for="in-progress">in progress</label>
+      </div>
+      <input type="submit" value="CREATE" class="green-button-square">
+    </div>
+    </div>
+  </form>
+</section>
+<section class="edit-case-popup" style="display:none">
+  <div class="box-wrapper">
+    <div class="box-title">
+      EDIT CASE
+    </div>
+    <div class="close-add"></div>
+  <form action="">
+    <div class="box-step">
+      <div class="step-title">
+        Case name
+      </div>
+        <input class="inputfield" type="text" name="case-name" value="" placeholder="Case name">
+  
+      <div class="step-title">
+        Case type
+      </div>
+      <div class="case-type-button">
+        <input id="RFA" type="radio" name="case-type" value="RFA">
+        <label for="RFA">RFA</label>
+      </div>
+      <div class="case-type-button">
+        <input id="NFI" type="radio" name="case-type" value="NFI">
+        <label for="NFI">NFI</label>
+      </div>
+      <div class="case-type-button">
+        <input id="RFC" type="radio" name="case-type" value="RFC">
+        <label for="RFC">RFC</label>
+      </div>
+      <div class="case-type-button">
+        <input id="info" type="radio" name="case-type" value="info">
+        <label for="info">info</label>
+      </div>
+  
+      <div class="clear"></div>
+  
+      <div class="step-title">
+        Case status
+      </div>
+  
+      <div class="case-status-button">
+        <input id="open" type="radio" name="case-status" value="open">
+        <label for="open">open</label>
+      </div>
+  
+      <div class="case-status-button">
+        <input id="in-progress" type="radio" name="case-status" value="in progress">
+        <label for="in-progress">in progress</label>
+      </div>
+      <input type="submit" value="CONFIRM" class="green-button-square">
+    </div>
+    </div>
+  </form>
+</section>
+
+
 <script src="js/list.js" type="text/javascript"></script>
+<script src="js/load-box.js" type="text/javascript"></script>
+<script src="js/center.js" type="text/javascript"></script>
+<script src="js/notification.js" type="text/javascript"></script>
 </body>
 </html>
