@@ -7,7 +7,7 @@ jQuery.fn.center = function(parent) {
     this.css({
         "position": "absolute",
         "top": ((($(parent).height() - this.outerHeight()) / 6) + $(parent).scrollTop() + "px"),
-        "left": ((($(parent).width() - this.outerWidth()) / 2.2) + $(parent).scrollLeft() + "px")
+        "left": ((($(parent).width() - this.outerWidth()) / 2 - 40) + $(parent).scrollLeft() + "px")
     });
 return this;
 }

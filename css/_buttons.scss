@@ -128,8 +128,9 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 }
 
 .inputfield {
-  height: 33px;
+  height: 31px;
   width: 208px;
+  margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid;
   border-color: $nam-lightblue;
@@ -176,9 +177,17 @@ $listmenu-icons:(button-add,button-edit,button-delete);
     width: 20px;
     visibility: none;
     cursor: pointer;
-    content: url('../img/radio-button.png');
-    &:checked {
-      content: url('../img/radio-button-selected.png');
-    }
   } 
+}
+
+.case-status-button {
+  input[type=radio] {
+    margin: 0 44px;
+  }
+}
+
+.case-type-button {
+  input[type=radio] {
+    margin: 0 17px;
+  }
 }
