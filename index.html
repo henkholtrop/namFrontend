@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<header>
+<div class="header">
   <div class="header-wrapper">
-    <img src="" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
+    <img src="./img/nam-logo.png" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
   
-    <nav>
+    <div class="nav">
       <ul>
         <a href="index.html">
           <li>
@@ -30,20 +30,26 @@
           </li>
         </a>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</div>
 
-<section class="main">
+<div class="main">
 
 <div class="breadcrumb">
-  <a href="#">Cases overview</a> >
+  <a href="#" id="breadcrumb-highlight">Cases overview</a> >
 </div>
 
 <div class="button-wrapper">
-  <div class="button-add blue-button-round button-add-case"></div>
-  <div class="button-edit grey-button-round button-edit-case"></div>
-  <div class="button-delete red-button-round button-delete-case"></div>
+  <div class="button-add blue-button-round button-add-case">
+    <img src="./img/button-add.png" alt="">
+  </div>
+  <div class="button-edit grey-button-round button-edit-case">
+    <img src="./img/button-edit.png" alt="">
+  </div>
+  <div class="button-delete red-button-round button-delete-case">
+    <img src="./img/button-delete.png" alt="">
+  </div>
 </div>
 
 <div class="clear"></div>
@@ -80,15 +86,15 @@
     </li>
   </ul>
 
-</section>
+</div>
 
-<section class="delete-case-popup" style="display:none">
+<div class="delete-case-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           DELETE CASE
-          <div class="close-add"></div>
+          <img class="close-add" src="./img/close.png">
         </div>  
       </div>
     </div>
@@ -106,16 +112,16 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="add-case-popup" style="display:none">
+<div class="add-case-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           ADD CASE
         </div>
-        <div class="close-add"></div>
+        <img class="close-add" src="./img/close.png">
       </div>
     </div>
     <div class="box-row-wrapper">
@@ -183,16 +189,16 @@
       </div>
     </div>    
   </div>
-</section>
+</div>
 
-<section class="edit-case-popup" style="display:none">
+<div class="edit-case-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           EDIT CASE
         </div>
-        <div class="close-add"></div>
+        <img class="close-add" src="./img/close.png">
       </div>
     </div>
     <div class="box-row-wrapper">
@@ -260,13 +266,13 @@
       </div>
     </div>    
   </div>
-</section>
+</div>
 
 
 <div class="error-notification">
   <div class="notification-cell">
     <div>
-      everything is vertically centered in modern IE8+ and others.<div class="red-notification"></div>
+      Assen Test was NOT uploaded!<img class="red-notification" src="./img/red-notification.png">
     </div>
   </div>
 </div>
@@ -274,7 +280,7 @@
 <div class="succes-notification">
   <div class="notification-cell">
     <div>
-      everything is vertically centered in modern IE8+ and others.<div class="green-notification"></div>
+      Assen Test was added successfully!<img class="green-notification" src="./img/green-notification.png">
     </div>
   </div>
 </div>

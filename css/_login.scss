@@ -1,22 +1,28 @@
 .login-background {
-  background: $nam-green;
+  background: url('../img/background.JPG');
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.jpg', sizingMethod='scale')";
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
 .login-wrap {
-  width: 210px;
+  width: 205px;
   display: table;
   padding: 25px 40px 10px ;
   background-color: $nam-white;
   border-radius: 4px;
+  behavior: url('../js/PIE.htc');
   div {
     margin: auto;
   }
-  img {
-    content: url('../img/nam-logo-grey.svg');
-    margin: 0 77px 20px;
+  .grey-logo {
+    background-size: cover;
+    width: 55px;
+    height: 53px;
+    margin: 0 75px 20px;
   }
 }
 

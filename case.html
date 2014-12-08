@@ -7,11 +7,11 @@
 </head>
 <body>
 
-<header>
+<div class="header">
   <div class="header-wrapper">
-    <img src="" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
+    <img src="./img/nam-logo.png" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
   
-    <nav>
+    <div class="nav">
       <ul>
         <a href="index.html">
           <li>
@@ -29,20 +29,26 @@
           </li>
         </a>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</div>
 
-<section class="main">
+<div class="main">
 
 <div class="breadcrumb">
-  <a href="index.html">Case overview</a> > <a href="#">Groningen Schadevergoedingen</a> >
+  <a href="index.html">Case overview</a> > <a href="#" id="breadcrumb-highlight">Groningen Schadevergoedingen</a> >
 </div>
 
 <div class="button-wrapper">
-  <div class="button-add blue-button-round button-add-file"></div>
-  <div class="button-edit grey-button-round button-edit-file"></div>
-  <div class="button-delete red-button-round button-delete-file"></div>
+  <div class="button-add blue-button-round button-add-file">
+    <img src="./img/button-add.png" alt="">
+  </div>
+  <div class="button-edit grey-button-round button-edit-file">
+    <img src="./img/button-edit.png" alt="">
+  </div>
+  <div class="button-delete red-button-round button-delete-file">
+    <img src="./img/button-delete.png" alt="">
+  </div>
 </div>
 
 <div class="clear"></div>
@@ -75,14 +81,14 @@
     </li>
   </ul>
 
-</section>
+</div>
 
 
-<section class="delete-case-popup" style="display:none">
+<div class="delete-case-popup" style="display:none">
   <div class="box-wrapper">
   <div class="box-title">
     DELETE CASE
-    <div class="close-add"></div>
+    <img class="close-add" src="./img/close.png">
   </div>
 
     <form action="">
@@ -98,13 +104,13 @@
       </div>
     </form>
   </div>
-</section>
-<section class="add-case-popup" style="display:none">
+</div>
+<div class="add-case-popup" style="display:none">
   <div class="box-wrapper">
   <div class="box-title">
     ADD CASE
   </div>
-  <div class="close-add"></div>
+  <img class="close-add" src="./img/close.png">
   <form action="">
     <div class="box-step">
       <div class="step-title">
@@ -151,13 +157,13 @@
     </div>
     </div>
   </form>
-</section>
-<section class="edit-case-popup" style="display:none">
+</div>
+<div class="edit-case-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-title">
       EDIT CASE
     </div>
-    <div class="close-add"></div>
+    <img class="close-add" src="./img/close.png">
   <form action="">
     <div class="box-step">
       <div class="step-title">
@@ -204,16 +210,16 @@
     </div>
     </div>
   </form>
-</section>
+</div>
 
 
-<section class="delete-file-popup" style="display:none">
+<div class="delete-file-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           DELETE CASE
-          <div class="close-add"></div>
+          <img class="close-add" src="./img/close.png">
         </div>
       </div>
     </div>
@@ -232,16 +238,16 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="add-file-popup" style="display:none">
+<div class="add-file-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           ADD FILE(S)
         </div>
-        <div class="close-add"></div>
+        <img class="close-add" src="./img/close.png">
       </div>
     </div>
       
@@ -265,16 +271,16 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="edit-file-popup" style="display:none">
+<div class="edit-file-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           EDIT FILE
         </div>
-        <div class="close-add"></div>    
+        <img class="close-add" src="./img/close.png">
       </div>
     </div>
     <div class="box-row-wrapper">
@@ -295,7 +301,7 @@
       </div>
     </div>    
   </div>
-</section>
+</div>
 
 
 <script src="js/list.js" type="text/javascript"></script>

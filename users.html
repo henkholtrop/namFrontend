@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<header>
+<div class="header">
   <div class="header-wrapper">
-    <img src="" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
+    <img src="./img/nam-logo.png" alt="Nederlandse Aardolie Maatschappij" class="namlogo">
   
-    <nav>
+    <div class="nav">
       <ul>
         <a href="index.html">
           <li>
@@ -30,62 +30,68 @@
           </li>
         </a>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</div>
 
-<section class="main">
+<div class="main">
 
 <div class="breadcrumb">
-  <a href="#">Users overview</a> >
+  <a href="#" id="breadcrumb-highlight">Users overview</a> >
 </div>
 
 <div class="button-wrapper">
-  <div class="button-add button-invite-user blue-button-round"></div>
-  <div class="button-edit button-edit-user grey-button-round"></div>
-  <div class="button-delete button-delete-user red-button-round"></div>
+  <div class="button-add blue-button-round button-invite-user">
+    <img src="./img/button-add.png" alt="">
+  </div>
+  <div class="button-edit grey-button-round button-edit-user">
+    <img src="./img/button-edit.png" alt="">
+  </div>
+  <div class="button-delete red-button-round button-delete-user">
+    <img src="./img/button-delete.png" alt="">
+  </div>
 </div>
 
 <div class="clear"></div>
 
   <div class="listheading">
-    <div class="case-name-head">Name</div>
-      <div class="case-type-head">E-mail</div>
-      <div class="case-status-head">Status</div>
+    <div class="user-name-head">Name</div>
+      <div class="user-type-head">E-mail</div>
+      <div class="user-status-head">Status</div>
   </div>
-  <ul class="doc-list">
-    <li class="case">
-      <div class="case-name"><a href="user.html">Jan Halstra</a></div>
-      <div class="case-type">j.halstra@nam.nl</div>
-      <div class="case-status">active</div>
+  <ul class="user-list">
+    <li class="user">
+      <div class="user-name"><a href="user.html">Jan Halstra</a></div>
+      <div class="user-type">j.halstra@nam.nl</div>
+      <div class="user-status">active</div>
     </li>
-    <li class="case">
-      <div class="case-name"><a href="#">Erna Koolbergen</a></div>
-      <div class="case-type">e.koolbergen@nam.nl</div>
-      <div class="case-status">active</div>
+    <li class="user">
+      <div class="user-name"><a href="#">Erna Koolbergen</a></div>
+      <div class="user-type">e.koolbergen@nam.nl</div>
+      <div class="user-status">active</div>
     </li>
-    <li class="case">
-      <div class="case-name"><a href="#">Albert Groothuizen</a></div>
-      <div class="case-type">a.groothuizen@nam.nl</div>
-      <div class="case-status">active</div>
+    <li class="user">
+      <div class="user-name"><a href="#">Albert Groothuizen</a></div>
+      <div class="user-type">a.groothuizen@nam.nl</div>
+      <div class="user-status">active</div>
     </li>
-    <li class="case">
-      <div class="case-name"><a href="#">Jan Verschuur</a></div>
-      <div class="case-type">j.verschuur@nam.nl</div>
-      <div class="case-status">invited</div>
+    <li class="user">
+      <div class="user-name"><a href="#">Jan Verschuur</a></div>
+      <div class="user-type">j.verschuur@nam.nl</div>
+      <div class="user-status">invited</div>
     </li>
   </ul>
 
-</section>
+</div>
 
 
-<section class="invite-user-popup" style="display:none">
+<div class="invite-user-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           INVITE USER
-          <div class="close-add"></div>
+          <img class="close-add" src="./img/close.png">
         </div>
       </div>
     </div>
@@ -127,15 +133,15 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="edit-user-popup" style="display:none">
+<div class="edit-user-popup" style="display:none">
   <div class="box-wrapper">
     <div class="box-row-wrapper">
       <div class="box-cell-wrapper">
         <div class="box-title">
           EDIT USER
-          <div class="close-add"></div>
+          <img class="close-add" src="./img/close.png">
         </div>
       </div>
     </div>
@@ -177,13 +183,13 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="delete-user-popup" style="display:none">
+<div class="delete-user-popup" style="display:none">
   <div class="box-wrapper">
   <div class="box-title">
     DELETE USER
-    <div class="close-add"></div>
+    <img class="close-add" src="./img/close.png">
   </div>
 
     <form action="">
@@ -199,7 +205,7 @@
       </div>
     </form>
   </div>
-</section>
+</div>
 
 
 <script src="js/list.js" type="text/javascript"></script>

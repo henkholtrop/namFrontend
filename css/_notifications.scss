@@ -25,10 +25,10 @@
   -webkit-animation: slideUp 4s 0.25s 1 ease forwards;
   -moz-transform:    translateY(+100px);
   -moz-animation:    slideUp 4s 0.25s 1 ease forwards;
+  behavior: url('../js/PIE.htc');
 }
 
 .red-notification {
-  content: url('../img/red-notification.svg');
   float: right;
   height: 24px;
   width: 24px;
@@ -36,10 +36,10 @@
   border: 1px solid;
   border-color: $nam-red;
   margin-right: 50px;
+  behavior: url('../js/PIE.htc');
 }
 
 .green-notification {
-  content: url('../img/green-notification.svg');
   float: right;
   height: 24px;
   width: 24px;
@@ -47,6 +47,7 @@
   border: 1px solid;
   border-color: $nam-green;
   margin-right: 50px;
+  behavior: url('../js/PIE.htc');
 }
 
 .notification-cell {

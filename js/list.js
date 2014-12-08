@@ -3,4 +3,8 @@ $(document).ready(function() {
     $( ".case" ).click(function() {
       $( this ).toggleClass(classHighlight);
   });
+  var classHighlight = 'highlight';
+    $( ".user" ).click(function() {
+      $( this ).toggleClass(classHighlight);
+  });
 });

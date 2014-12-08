@@ -1,20 +1,18 @@
-$listmenu-icons:(button-add,button-edit,button-delete);
-@each $icons in $listmenu-icons {
-  .#{$icons} { 
-    background: url('../img/#{$icons}.svg')no-repeat;
-  }
-}
-
 .blue-button-round, .grey-button-round, .red-button-round {
   height: 35px;
   width: 35px;
-  border-radius: 18px;
+  border-radius: 35px;
   float: left;
   margin-left: 10px;
   color: $nam-white;
   cursor: pointer;
   -moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.30);
   box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.30);
+  behavior: url('../js/PIE.htc');
+  img {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 .right {
@@ -30,25 +28,25 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 }
 
 .close-add {
-  content: url('../img/close.svg');
   position: absolute;
   height: 24px;
   width: 24px;
-  border-radius: 12px;
+  border-radius: 24px;
   border: 1px solid;
   border-color: $sdbr-darkgrey;
   right: 15px;
   top: 13px;
   cursor: pointer;
+  behavior: url('../js/PIE.htc');
 }
 
 .blue-button-round {
-  background-color: $btn-blue;
+  background: $btn-blue;
   &:hover {
-    background-color: $btn-blue-hover;
+    background: $btn-blue-hover;
   }
   &:active {
-    background-color: $btn-blue-pressed;
+    background: $btn-blue-pressed;
   }
 }
 
@@ -91,48 +89,48 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 }
 
 .grey-button-square {
-  background: $btn-white;
+  background-color: $btn-white;
   &:hover {
-    background: $btn-white-hover;
+    background-color: $btn-white-hover;
   }
   &:active {
-    background: $btn-white-pressed;
+    background-color: $btn-white-pressed;
   }
 }
 
 .blue-button-square {
-  background: $btn-blue;
+  background-color: $btn-blue;
   &:hover {
-    background: $btn-blue-hover;
+    background-color: $btn-blue-hover;
   }
   &:active {
-    background: $btn-blue-pressed;
+    background:-color $btn-blue-pressed;
   }
 }
 
 .green-button-square {
-  background: $btn-green;
+  background-color: $btn-green;
   &:hover {
-    background: $btn-green-hover;
+    background-color: $btn-green-hover;
   }
   &:active {
-    background: $btn-green-pressed;
+    background-color: $btn-green-pressed;
   }
 }
 
 .red-button-square {
-  background: $btn-red;
+  background-color: $btn-red;
   &:hover {
-    background: $btn-red-hover;
+    background-color: $btn-red-hover;
   }
   &:active {
-    background: $btn-red-pressed;
+    background-color: $btn-red-pressed;
   }
 }
 
 .blue-large-button-square, .green-large-button-square, .red-large-button-square {
   height: 33px;
-  width: 100%;
+  width: 205px;
   margin: 10px 0px;
   line-height: 32px;
   border-radius: 4px;
@@ -140,7 +138,6 @@ $listmenu-icons:(button-add,button-edit,button-delete);
   text-align: center;
   border: 0 none;
   font-size: 0.875em;
-  border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
   -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.30);
@@ -148,38 +145,38 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 }
 
 .blue-large-button-square {
-  background: $btn-blue;
+  background-color: $btn-blue;
   &:hover {
-    background: $btn-blue-hover;
+    background-color: $btn-blue-hover;
   }
-  &:pressed {
-    background: $btn-blue-pressed;
+  &:active {
+    background-color: $btn-blue-pressed;
   }
 }
 
 .green-large-button-square {
-  background: $btn-green;
+  background-color: $btn-green;
   &:hover {
-    background: $btn-green-hover;
+    background-color: $btn-green-hover;
   }
-  &:pressed {
-    background: $btn-green-pressed;
+  &:active {
+    background-color: $btn-green-pressed;
   }
 }
 
 .red-large-button-square {
-  background: $btn-red;
+  background-color: $btn-red;
   &:hover {
-    background: $btn-red-hover;
+    background-color: $btn-red-hover;
   }
-  &:pressed {
-    background: $btn-red-pressed;
+  &:active {
+    background-color: $btn-red-pressed;
   }
 }
 
 .inputfield {
   height: 31px;
-  width: 208px;
+  width: 206px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid;
@@ -191,19 +188,21 @@ $listmenu-icons:(button-add,button-edit,button-delete);
 }
 
 .file-inputfield::before {
-  content: url('../img/upload-button.svg');
+  content: " ";
+  background: url('../img/upload-button.png') no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
   display: block;
-  white-space: nowrap;
-  -webkit-user-select: none;
   cursor: pointer;
   height: 160px;
-  width: 210px;
+  width: 208px;
   border-radius: 4px;
   border: 1px dashed;
   border-color: $nam-lightblue;
-  text-align: center;
-  line-height: 170px;
-  color: $nam-blue;
+}
+
+input[type=text]::-webkit-input-placeholder {
+  font-size: em(14px);
 }
 
 .case-type-button {
