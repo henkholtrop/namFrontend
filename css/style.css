@@ -168,11 +168,14 @@ a {
 
 .inputfield {
   height: 31px;
-  width: 206px;
+  width: 199px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid;
   border-color: #4a90e2; }
+
+.inputfield-error {
+  border-color: #fb6d50; }
 
 .file-inputfield::-webkit-file-upload-button {
   display: none; }
@@ -181,7 +184,7 @@ a {
   content: " ";
   background: url("../img/upload-button.png") no-repeat;
   background-position: center;
-  background-size: 24px 24px;
+  background-size: 48px 48px;
   display: block;
   cursor: pointer;
   height: 160px;
@@ -190,8 +193,29 @@ a {
   border: 1px dashed;
   border-color: #4a90e2; }
 
-input[type=text]::-webkit-input-placeholder {
-  font-size: em(14px); }
+input[type=text], input[type=password] {
+  font-size: 14px;
+  padding-left: 3px; }
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px; }
+
+:-moz-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px; }
+
+::-moz-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px; }
+
+:-ms-input-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px; }
 
 .case-type-button {
   float: left;
@@ -222,12 +246,14 @@ input[type=text]::-webkit-input-placeholder {
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.jpg', sizingMethod='scale')";
+  display: table;
   position: absolute;
   height: 100%;
   width: 100%; }
 
 .login-wrap {
   width: 205px;
+  margin: auto;
   display: table;
   padding: 25px 40px 10px;
   background-color: white;
@@ -241,19 +267,14 @@ input[type=text]::-webkit-input-placeholder {
     height: 53px;
     margin: 0 75px 20px; }
 
-.error-message-username, .error-message-password {
-  width: 195px;
-  position: absolute;
-  color: white;
+.login-verticalwrap {
+  display: table-cell;
+  vertical-align: middle; }
+
+.error-message-login {
+  color: #fb6d50;
   font-style: italic;
-  top: 117px;
-  right: -210px; }
-
-.error-message-username {
-  top: 117px; }
-
-.error-message-password {
-  top: 170px; }
+  margin-top: -15px; }
 
 .error-notification, .succes-notification {
   border-radius: 8px 8px 0 0;
@@ -366,7 +387,7 @@ input[type=text]::-webkit-input-placeholder {
   display: none; }
 
 .box-wrapper {
-  width: 210px;
+  width: 205px;
   background-color: white;
   margin: auto;
   display: table;
@@ -380,7 +401,8 @@ input[type=text]::-webkit-input-placeholder {
 
 .box-cell-wrapper {
   display: table-cell;
-  width: 210px;
+  width: 205px;
+  padding: 0;
   margin: 0 auto; }
 
 .step-title {
@@ -402,6 +424,9 @@ input[type=text]::-webkit-input-placeholder {
   color: #6e6e6e;
   text-align: center;
   border-radius: 8px 8px 0 0; }
+
+.dz-error-mark, .dz-progress, .dz-success-mark {
+  display: none; }
 
 html {
   height: 100%; }

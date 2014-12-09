@@ -176,11 +176,15 @@
 
 .inputfield {
   height: 31px;
-  width: 206px;
+  width: 199px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid;
   border-color: $nam-lightblue;
+}
+
+.inputfield-error {
+  border-color: $nam-red;
 }
 
 .file-inputfield::-webkit-file-upload-button {
@@ -191,7 +195,7 @@
   content: " ";
   background: url('../img/upload-button.png') no-repeat;
   background-position: center;
-  background-size: 24px 24px;
+  background-size: 48px 48px;
   display: block;
   cursor: pointer;
   height: 160px;
@@ -201,8 +205,31 @@
   border-color: $nam-lightblue;
 }
 
-input[type=text]::-webkit-input-placeholder {
-  font-size: em(14px);
+input[type=text], input[type=password] {
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px;
+}
+
+:-moz-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px;
+}
+::-moz-placeholder {
+  font-size: 14px;
+  overflow: visible;
+  padding-left:3px;
+} 
+:-ms-input-placeholder { 
+  font-size: 14px;
+  overflow: visible;
+  padding-left: 3px;
 }
 
 .case-type-button {

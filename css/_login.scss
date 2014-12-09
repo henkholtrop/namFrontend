@@ -3,13 +3,15 @@
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/background.jpg', sizingMethod='scale')";
+  display: table;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 100%
 }
 
 .login-wrap {
   width: 205px;
+  margin: auto;
   display: table;
   padding: 25px 40px 10px ;
   background-color: $nam-white;
@@ -26,19 +28,13 @@
   }
 }
 
-.error-message-username, .error-message-password {
-  width: 195px;
-  position: absolute;
-  color: $nam-white;
+.login-verticalwrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.error-message-login {
+  color: $nam-red;
   font-style: italic;
-  top: 117px;
-  right: -210px;
-}
-
-.error-message-username {
-  top: 117px;
-}
-
-.error-message-password {
-  top: 170px;
+  margin-top: -15px;
 }
