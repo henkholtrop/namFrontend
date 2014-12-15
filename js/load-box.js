@@ -3,13 +3,13 @@ $(document).ready(function() {
   var closePopup = '.close-add'
 
   $('.button-add-case').click(function() {
-    $('.add-case-popup').css('display','block');
+    $('.add-case-popup').css('display','table');
   });
   $('.button-edit-case').click(function() {
-    $('.edit-case-popup').css('display','block');
+    $('.edit-case-popup').css('display','table');
   });
   $('.button-delete-case').click(function() {
-    $('.delete-case-popup').css('display','block');
+    $('.delete-case-popup').css('display','table');
   });
 
   $(closePopup).click(function() {
@@ -24,13 +24,13 @@ $(document).ready(function() {
 
   //Users
   $('.button-invite-user').click(function() {
-    $('.invite-user-popup').css('display','block');
+    $('.invite-user-popup').css('display','table');
   });
   $('.button-edit-user').click(function() {
-    $('.edit-user-popup').css('display','block');
+    $('.edit-user-popup').css('display','table');
   });
   $('.button-delete-user').click(function() {
-    $('.delete-user-popup').css('display','block');
+    $('.delete-user-popup').css('display','table');
   });
 
   $(closePopup).click(function() {
@@ -45,13 +45,13 @@ $(document).ready(function() {
 
   //upload
   $('.button-add-file').click(function() {
-    $('.add-file-popup').css('display','block');
+    $('.add-file-popup').css('display','table');
   });
   $('.button-delete-file').click(function() {
-    $('.delete-file-popup').css('display','block');
+    $('.delete-file-popup').css('display','table');
   });
   $('.button-edit-file').click(function() {
-    $('.edit-file-popup').css('display','block');
+    $('.edit-file-popup').css('display','table');
   });
 
   $(closePopup).click(function() {

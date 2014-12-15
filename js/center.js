@@ -12,3 +12,4 @@ jQuery.fn.center = function(parent) {
 return this;
 }
 $("div.box-wrapper").center(false);
+$("div.wide-box-wrapper").center(false);

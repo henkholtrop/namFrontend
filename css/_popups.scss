@@ -10,15 +10,39 @@
   display: none;
 }
 
-.box-wrapper {
+.box-wrapper, .wide-box-wrapper {
   width: 205px;
   background-color: $nam-white;
   margin: auto;
   display: table;
   border-radius: 8px;
   overflow: hidden;
-  padding: 0 40px 20px;
+  padding: 0 0px 20px;
+  box-sizing: border-box;
   behavior: url('../js/PIE.htc');
+}
+
+.vertical-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box-wrapper {
+  width: 270px;
+}
+
+.wide-box-wrapper {
+  width: 540px;
+}
+
+.line {
+  height: 60px;
+  width: 1px;
+  display: block;
+  background-color: $nam-lightgrey;
+  float: left;
+  margin-top: 25px;
+  margin-right: -1px
 }
 
 .box-row-wrapper {
@@ -28,7 +52,7 @@
 .box-cell-wrapper {
   display: table-cell;
   width: 205px;
-  padding: 0;
+  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -54,6 +78,31 @@
   border-radius: 8px 8px 0 0;
 }
 
-.dz-error-mark, .dz-progress, .dz-success-mark {
+.dz-error-mark, .dz-success-mark, .dz-error-message {
   display: none;
+}
+
+.dz-upload { 
+    display: block; 
+    background-color: red; 
+    height: 10px;
+    width: 0%;
+}
+
+.case-status-wrapper, .case-type-wrapper {
+  display: block;
+  width: 230px;
+  box-sizing: border-box;
+}
+
+.case-status-wrapper {
+  float: right;
+  padding-left: 19px;
+  padding-bottom: 20px;
+}
+
+.case-type-wrapper {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }

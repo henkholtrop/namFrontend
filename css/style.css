@@ -35,6 +35,7 @@ a {
   margin-left: 10px;
   color: white;
   cursor: pointer;
+  box-sizing: border-box;
   -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   behavior: url("../js/PIE.htc"); }
@@ -49,18 +50,18 @@ a {
   float: left; }
 
 .center {
-  margin-left: 70px;
-  margin-right: 70px; }
+  margin: auto;
+  display: block; }
 
 .close-add {
-  position: absolute;
   height: 24px;
   width: 24px;
   border-radius: 24px;
   border: 1px solid;
   border-color: #3b3d46;
-  right: 15px;
-  top: 13px;
+  float: right;
+  margin-top: 11px;
+  margin-right: -25px;
   cursor: pointer;
   behavior: url("../js/PIE.htc"); }
 
@@ -98,6 +99,7 @@ a {
   font-size: 0.875em;
   border-radius: 4px;
   cursor: pointer;
+  box-sizing: border-box;
   font-weight: 600;
   -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3); }
@@ -141,6 +143,7 @@ a {
   border: 0 none;
   font-size: 0.875em;
   cursor: pointer;
+  box-sizing: border-box;
   font-weight: 600;
   -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3); }
@@ -168,7 +171,8 @@ a {
 
 .inputfield {
   height: 31px;
-  width: 199px;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid;
@@ -225,8 +229,14 @@ input[type=text], input[type=password] {
   float: left;
   width: 50%; }
 
+.edit {
+  width: 33.33%; }
+  .edit input[type=radio] {
+    margin: 0 25px !important; }
+
 .case-status-button label, .case-type-button label {
   text-align: center;
+  font-size: 14px;
   display: block;
   margin: 3px 0; }
 .case-status-button input[type=radio], .case-type-button input[type=radio] {
@@ -252,10 +262,11 @@ input[type=text], input[type=password] {
   width: 100%; }
 
 .login-wrap {
-  width: 205px;
+  width: 270px;
+  box-sizing: border-box;
   margin: auto;
   display: table;
-  padding: 25px 40px 10px;
+  padding: 25px 0px 10px;
   background-color: white;
   border-radius: 4px;
   behavior: url("../js/PIE.htc"); }
@@ -266,10 +277,6 @@ input[type=text], input[type=password] {
     width: 55px;
     height: 53px;
     margin: 0 75px 20px; }
-
-.login-verticalwrap {
-  display: table-cell;
-  vertical-align: middle; }
 
 .error-message-login {
   color: #fb6d50;
@@ -386,15 +393,35 @@ input[type=text], input[type=password] {
   background: url("../img/transparent-bg.png") repeat;
   display: none; }
 
-.box-wrapper {
+.box-wrapper, .wide-box-wrapper {
   width: 205px;
   background-color: white;
   margin: auto;
   display: table;
   border-radius: 8px;
   overflow: hidden;
-  padding: 0 40px 20px;
+  padding: 0 0px 20px;
+  box-sizing: border-box;
   behavior: url("../js/PIE.htc"); }
+
+.vertical-wrapper {
+  display: table-cell;
+  vertical-align: middle; }
+
+.box-wrapper {
+  width: 270px; }
+
+.wide-box-wrapper {
+  width: 540px; }
+
+.line {
+  height: 60px;
+  width: 1px;
+  display: block;
+  background-color: #ecf0f1;
+  float: left;
+  margin-top: 25px;
+  margin-right: -1px; }
 
 .box-row-wrapper {
   display: table-row; }
@@ -402,7 +429,7 @@ input[type=text], input[type=password] {
 .box-cell-wrapper {
   display: table-cell;
   width: 205px;
-  padding: 0;
+  padding: 0 40px;
   margin: 0 auto; }
 
 .step-title {
@@ -425,8 +452,29 @@ input[type=text], input[type=password] {
   text-align: center;
   border-radius: 8px 8px 0 0; }
 
-.dz-error-mark, .dz-progress, .dz-success-mark {
+.dz-error-mark, .dz-success-mark, .dz-error-message {
   display: none; }
+
+.dz-upload {
+  display: block;
+  background-color: red;
+  height: 10px;
+  width: 0%; }
+
+.case-status-wrapper, .case-type-wrapper {
+  display: block;
+  width: 230px;
+  box-sizing: border-box; }
+
+.case-status-wrapper {
+  float: right;
+  padding-left: 19px;
+  padding-bottom: 20px; }
+
+.case-type-wrapper {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px; }
 
 html {
   height: 100%; }

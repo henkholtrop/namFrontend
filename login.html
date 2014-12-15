@@ -8,7 +8,7 @@
 <body>
 
 <div class="login-background">
-  <div class="login-verticalwrap">
+  <div class="vertical-wrapper">
     <div class="login-wrap">
       <div class="box-row-wrapper">
         <div class="box-cell-wrapper">
@@ -16,19 +16,23 @@
         </div>
       </div>
 
-      <form method="post" action="index.html">
-        <p>
-          <input class="inputfield inputfield-error" type="text" name="login" value="" placeholder="Username or Email">
-        </p>
-        <p>
-          <input class="inputfield inputfield-error" type="password" name="password" value="" placeholder="Password">
-        </p>
-        <p class="error-message-login">
-          Incorrect combination.
-        </p>
-        <p><a href="forgot-password.html">Forgot password?</a></p>
-        <p><input type="submit" name="commit" value="LOGIN" class="blue-large-button-square"></p>
-      </form>
+      <div class="box-row-wrapper">
+        <div class="box-cell-wrapper">
+          <form method="post" action="index.html">
+            <p>
+              <input class="inputfield inputfield-error" type="text" name="login" value="" placeholder="Username or Email">
+            </p>
+            <p>
+              <input class="inputfield inputfield-error" type="password" name="password" value="" placeholder="Password">
+            </p>
+            <p class="error-message-login">
+              Incorrect combination.
+            </p>
+            <p><a href="forgot-password.html">Forgot password?</a></p>
+            <p><input type="submit" name="commit" value="LOGIN" class="blue-large-button-square"></p>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
