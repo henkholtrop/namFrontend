@@ -19,6 +19,8 @@ body {
 .header-wrapper {
   width: 75%;
   margin: 0 auto;
+  min-width: 880px;
+  padding: 0 40px;
 }
 
 .clear {
@@ -64,6 +66,8 @@ body {
 .main {
   width: 75%;
   margin: 40px auto;
+  min-width: 880px;
+  padding: 0 40px;
   ul {
     list-style: none;
     margin: 0;
@@ -79,14 +83,23 @@ body {
         border-bottom: 1px solid;
         border-bottom-color: $nam-lightgrey;
       }
-      .case-name, .file-name {
+      .case-name {
         width: 62%;
+        padding: 17px 3%;
         a {
           color: $txt-normal;
           text-decoration: none;
           &:hover {
             text-decoration: underline;
           }
+        }
+        img {
+          width: 12px;
+          overflow: visible;
+          height: 15px;
+          position: absolute;
+          margin-left: -1.5%;
+          margin-top: 2px;
         }
       }
       .case-type {
@@ -125,16 +138,7 @@ body {
 }
 
 .case-name {
-  padding: 17px 3%;
-}
-
-.file-name {
-  padding: 17px 1.26%;
-  img {
-    width: 8px;
-    height: 10px;
-    margin-right: 2%;
-  }
+  
 }
 
 .breadcrumb {

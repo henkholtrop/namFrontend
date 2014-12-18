@@ -505,7 +505,9 @@ body {
 
 .header-wrapper {
   width: 75%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-width: 880px;
+  padding: 0 40px; }
 
 .clear {
   clear: both;
@@ -540,7 +542,9 @@ body {
 
 .main {
   width: 75%;
-  margin: 40px auto; }
+  margin: 40px auto;
+  min-width: 880px;
+  padding: 0 40px; }
   .main ul {
     list-style: none;
     margin: 0;
@@ -554,13 +558,21 @@ body {
         display: table-cell;
         border-bottom: 1px solid;
         border-bottom-color: #ecf0f1; }
-      .main ul li .case-name, .main ul li .file-name {
-        width: 62%; }
-        .main ul li .case-name a, .main ul li .file-name a {
+      .main ul li .case-name {
+        width: 62%;
+        padding: 17px 3%; }
+        .main ul li .case-name a {
           color: #6e6e6e;
           text-decoration: none; }
-          .main ul li .case-name a:hover, .main ul li .file-name a:hover {
+          .main ul li .case-name a:hover {
             text-decoration: underline; }
+        .main ul li .case-name img {
+          width: 12px;
+          overflow: visible;
+          height: 15px;
+          position: absolute;
+          margin-left: -1.5%;
+          margin-top: 2px; }
       .main ul li .case-type {
         width: 20%;
         color: #6e6e6e; }
@@ -585,16 +597,6 @@ body {
         color: #555555;
         font-weight: 200;
         font-style: italic; }
-
-.case-name {
-  padding: 17px 3%; }
-
-.file-name {
-  padding: 17px 1.26%; }
-  .file-name img {
-    width: 8px;
-    height: 10px;
-    margin-right: 2%; }
 
 .breadcrumb {
   float: left; }
