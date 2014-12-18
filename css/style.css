@@ -554,13 +554,12 @@ body {
         display: table-cell;
         border-bottom: 1px solid;
         border-bottom-color: #ecf0f1; }
-      .main ul li .case-name {
-        width: 62%;
-        padding: 17px 3%; }
-        .main ul li .case-name a {
+      .main ul li .case-name, .main ul li .file-name {
+        width: 62%; }
+        .main ul li .case-name a, .main ul li .file-name a {
           color: #6e6e6e;
           text-decoration: none; }
-          .main ul li .case-name a:hover {
+          .main ul li .case-name a:hover, .main ul li .file-name a:hover {
             text-decoration: underline; }
       .main ul li .case-type {
         width: 20%;
@@ -586,6 +585,16 @@ body {
         color: #555555;
         font-weight: 200;
         font-style: italic; }
+
+.case-name {
+  padding: 17px 3%; }
+
+.file-name {
+  padding: 17px 1.26%; }
+  .file-name img {
+    width: 8px;
+    height: 10px;
+    margin-right: 2%; }
 
 .breadcrumb {
   float: left; }

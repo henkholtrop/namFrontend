@@ -79,9 +79,8 @@ body {
         border-bottom: 1px solid;
         border-bottom-color: $nam-lightgrey;
       }
-      .case-name {
+      .case-name, .file-name {
         width: 62%;
-        padding: 17px 3%;
         a {
           color: $txt-normal;
           text-decoration: none;
@@ -122,6 +121,19 @@ body {
         font-style: italic;
       }
     }
+  }
+}
+
+.case-name {
+  padding: 17px 3%;
+}
+
+.file-name {
+  padding: 17px 1.26%;
+  img {
+    width: 8px;
+    height: 10px;
+    margin-right: 2%;
   }
 }
 
